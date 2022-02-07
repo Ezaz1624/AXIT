@@ -9,7 +9,9 @@ li {
 a {
     text-decoration: none;
 }
-
+ol, ul {
+    padding-left: 0rem;
+}
 /*****google font linik*****/
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -20,15 +22,21 @@ font-family: 'Raleway', sans-serif;
 */
 
 .header {
-    background: #000;
+    background: rgba(20, 20, 20, 1);
     position: fixed;
     width: 100%;
     transition: .5s;
 
 }
+.navbar-toggler {
+    border: 1px solid #FF8B38;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
 .stricky{
     /* position: fixed; */
-    background: rgba(20, 20, 20, 0.5);
+    background: rgba(20, 20, 20, 1);
     /* width: 100%; */
     z-index: 5;
     transition: .5s;
@@ -52,6 +60,10 @@ font-family: 'Raleway', sans-serif;
 .stricky .nav-link:hover {
     color: #ff8b38;
 }
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28225, 139, 56, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    z-index: 999;
+}
 .nav-item {
     margin-left: 45px;
 }
@@ -72,8 +84,8 @@ font-family: 'Raleway', sans-serif;
 
 #first-banare {
     width: 100%;
-    height: 100vh;
-    padding: 200px 0;
+    /* height: 100vh; */
+    padding: 180px 0;
     background: url(img/bg1.png);
     background-position: bottom center;
     background-size: cover;
@@ -196,6 +208,7 @@ font-family: 'Raleway', sans-serif;
     text-transform: capitalize;
     color: #333333;
 }
+
 .sm-left p,
 .f1-middile p,
 .f2-right p,
@@ -210,7 +223,6 @@ font-family: 'Raleway', sans-serif;
 .socil-icon {
     text-align: right;
 }
-.socil-icon ul {}
 .socil-icon ul li {
     display: inline-block;
     margin-left: 40px;
@@ -235,7 +247,7 @@ font-family: 'Raleway', sans-serif;
 
 #feature-1 {
     width: 100%;
-    height: 75vh;
+    /* height: 75vh; */
     padding: 120px 0;
     background: #f5f5f5;
 }
@@ -303,7 +315,7 @@ font-family: 'Raleway', sans-serif;
 
 #feature-2 {
     width: 100%;
-    height: 75vh;
+    /* height: 75vh; */
     padding: 110px 0;
 }
 .f2-left img {
@@ -375,7 +387,7 @@ font-family: 'Raleway', sans-serif;
 
 #feature-3 {
     width: 100%;
-    height: 75vh;
+    /* height: 75vh; */
     padding: 120px 0;
     background: #f5f5f5;
 }
@@ -392,7 +404,7 @@ font-family: 'Raleway', sans-serif;
 
 #our-process {
     width: 100%;
-    height: 75vh;
+    /* height: 75vh; */
     padding: 100px 0;
 }
 .line-1 {
@@ -424,7 +436,7 @@ font-family: 'Raleway', sans-serif;
 
 #pricing {
     width: 100%;
-    height: 105vh;
+    /* height: 105vh; */
     padding: 60px 0;
     background: #f5f5f5;
 }
@@ -502,7 +514,7 @@ font-family: 'Raleway', sans-serif;
 
 #testimonial {
     width: 100%;
-    height: 95vh;
+    /* height: 95vh; */
     padding: 140px 0;
 }
 .massage {
@@ -559,7 +571,7 @@ font-family: 'Raleway', sans-serif;
 
 #contact {
     width: 100%;
-    height: 82vh;
+    /* height: 82vh; */
     padding: 85px 0;
 }
 .contact-form input,
@@ -583,7 +595,7 @@ font-family: 'Raleway', sans-serif;
 
 #footer {
     width: 100%;
-    height: 12vh;
+    /* height: 12vh; */
     padding: 15px 0;
     background: #000;
 }
